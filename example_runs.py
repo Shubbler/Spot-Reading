@@ -9,18 +9,6 @@ def get_words_from_file(fname):
     """
     text_elements = []
     
-    lines = open(fname, 'r').read().splitlines()
-    for text in lines:
-        text_elements.extend(text.split(' '))
-    return text_elements
-
-def get_words_from_file(fname):
-    """ Extracts text from a text file and returns
-    a list of words. Punctuation is not separated 
-    from the words.
-    """
-    text_elements = []
-    
     with open(fname, 'r') as f:
         lines = f.read().splitlines()
         for text in lines:
